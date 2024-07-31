@@ -1,0 +1,17 @@
+services:
+  common:
+    image: sevenhallo-security:latest
+    container_name: security
+    command: start-dev
+    ports:
+      - "8003:8003"
+    networks:
+      - sevenhallo
+
+volumes:
+  product-service:
+
+networks:
+  sevenhallo:
+    driver: bridge
+    external: true
