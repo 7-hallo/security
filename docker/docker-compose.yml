@@ -1,5 +1,5 @@
 services:
-  common:
+  security:
     image: sevenhallo-security:latest
     container_name: security
     command: start-dev
@@ -9,7 +9,7 @@ services:
       - sevenhallo
 
 volumes:
-  product-service:
+  security:
 
 networks:
   sevenhallo:
